@@ -1,13 +1,40 @@
-# Kubernetes Commands
+#Kubernetes Commands
+
+## MINIKUBE
+
+### start minikube 
+minikube start
+
+### check minikube status
+minikube status
+
+### stop minikube 
+minikube stop
+
+
 
 ## PODS
 
-# SHOW LIST OF RUNNING PODS
+### show list of pods
 kubectl get pods
 
-2. kubectl get pods -o wide —> for more details
-3. kubctl run nginx --image=nginx --> Run nginx image.  To run a pod with a specific image in Kubernetes.
-4. kubectl delete pod nginx --now  —> to delete pod  
+### show list of pods with more details
+kubectl get pods -o wide —> for more details
+
+### Run a pod with specific image
+kubctl run nginx --image=nginx
+
+### To delete the running pod
+kubectl delete pod nginx --now
+
+
+
+
+## NODES
+
+
+
+
 
 ping pod_ip
 ssh worker-1 ping pod_ip
